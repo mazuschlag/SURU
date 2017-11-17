@@ -16,7 +16,7 @@ export class EditInput extends Component {
 			<div className="Input">
 			  <div className="form-group">
 			    <label>説明</label>
-			    <textarea placeholder={this.props.defaultInput} className="form-control" id="inputTextBox" rows="3" onChange={this.handleInput}></textarea>
+			    <textarea className="form-control" id="inputTextBox" rows="3" value={this.props.currentInput} onChange={this.handleInput}></textarea>
 			  </div>
   		</div>			
 		);

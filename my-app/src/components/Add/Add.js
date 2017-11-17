@@ -3,6 +3,7 @@ import { Input } from './Input';
 import { Priority } from './Priority';
 import { AddButton } from './AddButton';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
+import '../../css/Add.css';
 
 export class Add extends Component {
 	constructor(props) {

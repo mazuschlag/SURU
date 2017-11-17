@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Add } from './Add/Add';
 import { View } from './View/View';
-import './App.css';
+import './../css/App.css';
 
 export class App extends Component {
 	constructor(props) {
@@ -41,9 +41,12 @@ export class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Add onClick={this.addToDo} />
-        <View toDoList={this.state.toDoList} removeToDo={this.removeToDo} editToDo={this.editToDo} />
+    	<div className="container" id="all">
+    		<h1>簡単なタスクリスト</h1>
+      	<div className="App">
+        	<Add onClick={this.addToDo} />
+        	<View toDoList={this.state.toDoList} removeToDo={this.removeToDo} editToDo={this.editToDo} />
+      	</div>
       </div>
     );
   }

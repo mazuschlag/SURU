@@ -31,7 +31,7 @@ export class Edit extends Component {
 	render() {
 		return (<div className="Edit">
 			<li className="list-group-item list-group-item-info">
-				<EditInput update={this.updateInput} defaultInput={this.props.item.input} />
+				<EditInput update={this.updateInput} currentInput={this.state.editInput} />
 				<EditPriority update={this.updatePriority} defaultPriority={this.props.item.priority} />
 				<SaveEdit save={this.handleSave} />
 			</li>
