@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
+import '../../css/View.css';
 
 export class EditInput extends Component {
 	constructor(props) {

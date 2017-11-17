@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ToDos } from './ToDos';
 import { Edit } from './Edit';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../css/View.css';
 
 export class View extends Component {
 	constructor(props) {

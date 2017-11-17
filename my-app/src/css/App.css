@@ -1,5 +1,21 @@
-#all {
+html, body, #app, #app>div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-color: #b0caff;
+	background-image: url("./img/natural-paper.png");
+}
+
+#root, #all {
+	width: 100%;
 	height: 100%;
+}
+
+#all {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
 }
 
 .App {
@@ -7,3 +23,17 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 }
+
+#main {
+	margin-top: 20px;
+}
+
+#main2 {
+	margin-bottom: 20px;
+}
+
+#main, #main2 {
+	margin-left: 60px;	
+}
+
+

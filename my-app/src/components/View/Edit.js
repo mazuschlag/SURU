@@ -3,6 +3,7 @@ import { EditInput } from './EditInput';
 import { EditPriority } from './EditPriority';
 import { SaveEdit } from './SaveEdit';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../css/View.css';
 
 export class Edit extends Component {
 	constructor(props) {
@@ -29,8 +30,17 @@ export class Edit extends Component {
 	}
 
 	render() {
+		let cn = null;
+		if (this.props.item.priority === "0") {
+			cn = "list-group-item list-group-item-success";
+		} else if (this.props.item.priority === "1") {
+			cn = "list-group-item list-group-item-warning";
+		} else {
+			cn = "list-group-item list-group-item-danger";
+		}
+
 		return (<div className="Edit">
-			<li className="list-group-item list-group-item-info">
+			<li className={cn}>
 				<EditInput update={this.updateInput} currentInput={this.state.editInput} />
 				<EditPriority update={this.updatePriority} defaultPriority={this.props.item.priority} />
 				<SaveEdit save={this.handleSave} />

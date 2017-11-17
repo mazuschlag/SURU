@@ -1,0 +1,10 @@
+.View {
+	width: 60%;
+	margin-left: 20px;
+	margin-right: 60px;
+}
+
+.SaveEditButton {
+	display: flex;
+	justify-content: flex-end;
+}

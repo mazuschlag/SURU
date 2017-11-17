@@ -41,8 +41,9 @@ export class App extends Component {
 
   render() {
     return (
-    	<div className="container" id="all">
-    		<h1>簡単なタスクリスト</h1>
+    	<div id="all">
+    		<h1 id="main">簡単なタスクリスト</h1>
+    		<h4 id="main2">することを忘れないように</h4>
       	<div className="App">
         	<Add onClick={this.addToDo} />
         	<View toDoList={this.state.toDoList} removeToDo={this.removeToDo} editToDo={this.editToDo} />

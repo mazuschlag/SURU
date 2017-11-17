@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../node_modules/open-iconic/font/css/open-iconic-bootstrap.css';
+import '../../css/View.css';
 
 const iconStyle = {
 	marginLeft: "10px"

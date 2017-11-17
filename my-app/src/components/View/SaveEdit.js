@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
+import '../../css/View.css';
 
 export class SaveEdit extends Component {
 	constructor(props) {
@@ -14,7 +15,7 @@ export class SaveEdit extends Component {
 	render() {
 		return (
 			<div className="SaveEditButton">
-				<button type="button" className="btn btn-outline-success" onClick={this.handleClick}>保存</button>
+				<button type="button" className="btn btn-success" onClick={this.handleClick}>保存</button>
 			</div>
 		);
 	}
